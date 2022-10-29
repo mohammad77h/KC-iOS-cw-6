@@ -40,15 +40,15 @@ struct ContentView: View {
                     .foregroundColor(.blue)
                 
             })
-            
+            Text("BMI = \(BMI)")
+            Text("Status = \(Status)")
+
         }
         
         .frame(width: 500, height: 280)
         .background(Color.orange)
         .contrast(10)
         
-        Text("BMI = \(BMI)")
-        Text("Status = \(Status)")
     }
     func BMICalulator(heigh: Double, weight: Double){
         var mohammed = weight / (heigh * heigh)
@@ -59,11 +59,11 @@ struct ContentView: View {
         } else {
             Status = "سمين"
         }
-          BMI = "\(mohammed)"
-            
-            
-            
-            
+        BMI = "\(mohammed)"
+        
+        
+    }
+}
             
             
             struct ContentView_Previews: PreviewProvider {
@@ -71,11 +71,11 @@ struct ContentView: View {
                     ContentView()
                 }
             }
-        }
         
         
         
         
         
-    }
+        
+    
 
